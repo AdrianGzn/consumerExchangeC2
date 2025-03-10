@@ -70,7 +70,6 @@ func main() {
         for d := range msgs {
             log.Printf(" [x] Received message: %s", d.Body)
 
-            // Aquí se imprime la solicitud POST antes de enviarla
             log.Printf("Enviando request POST con los siguientes detalles:")
             log.Printf("URL: http://127.0.0.1:8082/order/")
             log.Printf("Headers: %v", map[string]string{"Content-Type": "text/plain"})
